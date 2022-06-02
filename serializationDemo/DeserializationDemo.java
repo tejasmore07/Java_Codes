@@ -5,11 +5,11 @@ import java.io.ObjectInputStream;
 
 public class DeserializationDemo {
     public static void main(String[] args) {
-        serial1 s1 = null;
+        serialization s1 = null;
         try{
             FileInputStream fin = new FileInputStream("D:\\Study video\\java practice\\employee.ser");
             ObjectInputStream in = new ObjectInputStream(fin);
-            s1 = (serial1) in.readObject();
+            s1 = (serialization) in.readObject();
             in.close();
             fin.close();
         }
